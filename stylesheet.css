@@ -2,7 +2,20 @@
 
 div{border-style:solid;
 	border-color: red;
-	border-width:1px;
-	padding: 0 100px 0 0;
-	margin: 200px 200px 0 200px;
+	border-width:2px; /**épaisseur de trait de la bordure**/
+	margin: 0 0 0 0; 					
+}
+
+li{list-style: none;/** pas de "points" devant chaque liste...annule aussi les effets de styles comme italique ou surligné**/
+	display: inline-block;/** aligne les li en "inline" et les considère chacuns d'eux comme un "block"**/
+	width: 30%; /**chaque li est positionné à 33% entre eux dans la div(on divise la div en 3 en gros) **/
+	text-align:center;
+	color:green;
+	border:dotted .5px;/**j'ai utilisé la fonction pour montrer que désormais chaque "li"  deviennent des "block" grâce à "inline-block" on peut écrire comme ça aussi**/
+}
+
+li:first-child {text-align: left; /**le premier li de la liste est à gauche (!!!!!!il est prioritaire sur le "text-align:center plus haut") **/
+}
+
+li:last-child {text-align: right; /**le second li de la liste est à droite) **/
 }
