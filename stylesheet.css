@@ -1,15 +1,15 @@
 
 
-div{border-style:solid;
+#toto{border-style:solid;
 	border-color: red;
 	border-width:2px; /**épaisseur de trait de la bordure**/
-	margin: 0 0 0 0; 					
+	margin: 0 0 0 0; 				
 }
 
 li{list-style: none;/** pas de "points" devant chaque liste...annule aussi les effets de styles comme italique ou surligné**/
 	display: inline-block;/** aligne les li en "inline" et les considère chacuns d'eux comme un "block"**/
-	width: 30%; /**chaque li est positionné à 33% entre eux dans la div(on divise la div en 3 en gros) **/
-	text-align:center;
+	width: 30%;/**chaque li est positionné à 33% entre eux dans la div(on divise la div en 3 en gros) **/
+	text-align:left;
 	color:green;
 	border:dotted .5px;/**j'ai utilisé la fonction pour montrer que désormais chaque "li"  deviennent des "block" grâce à "inline-block" on peut écrire comme ça aussi**/
 }
@@ -18,4 +18,11 @@ li:first-child {text-align: left; /**le premier li de la liste est à gauche (!!
 }
 
 li:last-child {text-align: right; /**le second li de la liste est à droite) **/
+}
+
+
+#gégé{width:500px;
+	height: 400px;
+	border:dashed 5px;	
+	border-color: pink;
 }
